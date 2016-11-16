@@ -1,7 +1,7 @@
 # CNN for discourse_prediction in a storytelling style speech
 Python code for the paper "Sentence Based Discourse Classification for Hindi Story Text-to-Speech (TTS) System"
 
-Runs the model on Hindi Story dataset (created by us). Please cite the original paper when using the data.
+Runs the model on Hindi Story discourse dataset (Desceptive, Narrative and Dialogue). Please cite the original paper when using the data.
 
 # Steps for running the model
 
