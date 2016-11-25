@@ -170,12 +170,6 @@ def train_conv_net(datasets,
     print "feature dimension: " + str(predictions1.shape)
     predictions1 = np.array(predictions1)
     #np.savetxt('clas3/test1.txt', predictions1[1:124][0],delimiter=" ", fmt="%s")
-    
-
-    with open("clas3/test2.txt", "a") as myfile:
-      for i in range(test_size):
-         myfile.write(predictions1)
-
 
     test_error = T.mean(T.neq(test_y_pred, y))
     test_model_all = theano.function([x,y], test_error, allow_input_downcast = True) 
@@ -386,7 +380,7 @@ if __name__=="__main__":
     elif mode=="-static":
         print "model architecture: CNN-static"
         non_static=False
-    execfile("conv_net_classes.py")    
+    execfile("convolution_net_classes.py")    
     if word_vectors=="-rand":
         print "using: random vectors"
         U = W2
