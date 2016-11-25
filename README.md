@@ -10,6 +10,6 @@ Runs the model on Hindi Story discourse dataset (Desceptive, Narrative and Dialo
 2- # Any one of them 
 
    THEANO_FLAGS=mode=FAST_RUN,device=cpu,floatX=float32 python convolution_net_sentence.py -nonstatic -rand
-   THEANO_FLAGS=mode=FAST_RUN,device=cpu,floatX=float32 python conv_net_sentence.py -static -word2vec
-   THEANO_FLAGS=mode=FAST_RUN,device=cpu,floatX=float32 python conv_net_sentence.py -nonstatic -word2vec 
+   THEANO_FLAGS=mode=FAST_RUN,device=cpu,floatX=float32 python convolution_net_sentence.py -static -word2vec
+   THEANO_FLAGS=mode=FAST_RUN,device=cpu,floatX=float32 python convolution_net_sentence.py -nonstatic -word2vec 
    
